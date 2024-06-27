@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-//import Button from "./CommonBox/Button";
+import { Link } from "react-router-dom";
 
 const UserCard = () => {
   const [buttonBg, setButtonBg] = useState(false);
   const [postbuttonBg, setPostButtonBg] = useState(false);
 
   return (
-    <div className="bg-red-200 h-screen  ">
+    <div className="bg-red-200 h-[100%]">
       <div className="h-fit  w-[50%]   p-2  ">
         <div className="mt-10 bg-white p-4 rounded-2xl w-full ml-60">
           <div className="flex  items-center space-x-2  ">
@@ -23,11 +23,11 @@ const UserCard = () => {
 
           {/*  YOUR CIRCLES */}
           <div>
-            <div className=" text-indigo-900 font-semibold">Your Circles</div>
+            <div className=" text-indigo-900 font-semibold ">Your Circles</div>
             <div className="">
               <div className="flex space-x-6 ">
                 {" "}
-                <div className="flex justify-center items-center">
+                <div className="flex justify-center items-center text-sm">
                   <div>
                     <img
                       src="image.jpg"
@@ -62,44 +62,52 @@ const UserCard = () => {
                 </div>
               </div>
             </div>
-          </div>
 
-          {/*  circle End */}
+            {/*  circle End */}
 
-          <hr className="mt-3" />
-          <hr className="mt-6" />
-          {/*  create button */}
-          <div
-            className={`w-full border-2 rounded-2xl text-center mt-5 p-1 ${
-              buttonBg ? "bg-indigo-900 text-white" : "bg-white text-indigo-900"
-            }`}
-          >
-            <button
-              onClick={() => {
-                setButtonBg(!buttonBg);
-              }}
-              className="w-full"
+            <hr className="mt-3" />
+            <hr className="mt-6" />
+            {/*  create button */}
+            <div
+              className={`w-full border-2 rounded-2xl text-center mt-5 p-1 ${
+                buttonBg
+                  ? "bg-indigo-900 text-white"
+                  : "bg-white text-indigo-900"
+              }`}
             >
-              Create Post
-            </button>
-          </div>
-          {/* your post button */}
+              <Link to="/">
+                {" "}
+                <button
+                  onClick={() => {
+                    setButtonBg(!buttonBg);
+                  }}
+                  className="w-full"
+                >
+                  Create Post
+                </button>
+              </Link>
+            </div>
+            {/* your post button */}
 
-          <div
-            className={`w-full border-2 rounded-2xl text-center mt-5 p-1 ${
-              postbuttonBg
-                ? "bg-indigo-900 text-white"
-                : "bg-white text-indigo-900"
-            }`}
-          >
-            <button
-              onClick={() => {
-                setPostButtonBg(!postbuttonBg);
-              }}
-              className="w-full"
+            <div
+              className={`w-full border-2 rounded-2xl text-center mt-5 p-1 ${
+                postbuttonBg
+                  ? "bg-indigo-900 text-white"
+                  : "bg-white text-indigo-900"
+              }`}
             >
-              Your Post
-            </button>
+              <Link to="/post">
+                {" "}
+                <button
+                  onClick={() => {
+                    setPostButtonBg(!postbuttonBg);
+                  }}
+                  className="w-full"
+                >
+                  Your Post
+                </button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>

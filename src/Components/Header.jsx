@@ -10,7 +10,7 @@ const Header = () => {
   const { headerData } = useContext(AnyoData);
   console.log(headerData);
   return (
-    <div className="flex justify-around items-center">
+    <div className="flex justify-around items-center mt-5">
       {/*  {headerData.map((data) => {
         return (
           <div key={data.id}>
@@ -22,33 +22,33 @@ const Header = () => {
       <div className="flex justify-center items-center space-x-10">
         <div>
           <div className="flex items-center justify-center ">
-            <TbBrandWechat size={40} className="text-center" />
+            <TbBrandWechat size={30} className="text-center" />
           </div>
-          <div>Listener Chat</div>
+          <div className="text-sm">Listener Chat</div>
         </div>
         <div>
           <div className="flex items-center justify-center ">
-            {/* <RiWechatPayLine /> */} <RiWechatPayLine size={40} />
+            {/* <RiWechatPayLine /> */} <RiWechatPayLine size={30} />
           </div>
-          <div>Expert Chat</div>
+          <div className="text-sm">Expert Chat</div>
         </div>
         <div>
           <div className="flex items-center justify-center ">
-            {/* <RiWechatLine /> */} <TbBrandWechat size={40} />
+            {/* <RiWechatLine /> */} <TbBrandWechat size={30} />
           </div>
-          <div>Session</div>
+          <div className="text-sm">Session</div>
         </div>
         <div>
           <div className="flex items-center justify-center ">
-            <RiWechatLine size={40} /> {/* <TbBrandWechat  /> */}
+            <RiWechatLine size={30} /> {/* <TbBrandWechat  /> */}
           </div>
-          <div>Circles</div>
+          <div className="text-sm">Circles</div>
         </div>
         <div>
           <div className="flex items-center justify-center ">
-            <MdLiveTv size={40} />
+            <MdLiveTv size={30} />
           </div>
-          <div className="text-center">Live</div>
+          <div className="text-center text-sm">Live</div>
         </div>
       </div>
       <div>

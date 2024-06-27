@@ -4,13 +4,16 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import AnyoContext from "./Context/AnyoContext";
+import { BrowserRouter } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <AnyoContext>
-      <App />
-    </AnyoContext>
+    <BrowserRouter>
+      <AnyoContext>
+        <App />
+      </AnyoContext>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
