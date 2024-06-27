@@ -5,7 +5,7 @@ import WritePost from "./CreatePost/WritePost";
 
 const CreatePost = () => {
   return (
-    <div className="w-[50%] ml-5 ">
+    <div className="w-[50%]    ">
       <CreatPostHeader />
       <PostContent />
       <WritePost />

@@ -14,7 +14,7 @@ const UserCard = () => {
               <img
                 src="image.jpg"
                 alt="userProfile"
-                className=" h-12 w-12 rounded-full object-cover"
+                className=" h-12 w-12 rounded-full object-cover "
               />
             </div>
             <div className="text-xl text-indigo-900 font-semibold"> Surbhi</div>
@@ -71,7 +71,7 @@ const UserCard = () => {
             <Link to="/">
               {" "}
               <div
-                className={`w-full border-2 rounded-2xl text-center mt-5 p-1 ${
+                className={`w-full border-2 rounded-full text-center mt-5 p-1 ${
                   buttonBg !== "AA"
                     ? "bg-indigo-950 text-white  font-semibold text-sm"
                     : "bg-white text-indigo-900  font-semibold text-sm"
@@ -93,7 +93,7 @@ const UserCard = () => {
             <Link to="/post">
               {" "}
               <div
-                className={`w-full border-2 rounded-2xl text-center mt-5 p-1 ${
+                className={`w-full border-2 rounded-full text-center mt-5 p-1 ${
                   buttonBg !== "BB"
                     ? "bg-indigo-950 text-white  font-semibold text-sm"
                     : "bg-white text-indigo-900 font-semibold text-sm"

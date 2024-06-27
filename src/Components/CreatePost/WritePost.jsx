@@ -16,11 +16,11 @@ const WritePost = () => {
         <div className="text-indigo-950 font-semibold">
           Write Post <span className="text-red-600">*</span>
         </div>
-        <div className="h-52 w-[70%] text-indigo-950 rounded-t mt-1 ">
+        <div className="h-52 w-[70%] text-indigo-950 rounded-xl mt-1 ">
           <textarea
             name=""
             id=""
-            className="h-full w-full "
+            className="h-full w-full rounded-xl "
             placeholder="Write Your Thoughts..."
           ></textarea>
         </div>

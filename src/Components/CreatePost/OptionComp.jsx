@@ -6,7 +6,7 @@ const OptionComp = () => {
     <div className="ml-4 mt-3 w-[70%] space-y-2">
       <div className=" flex justify-between items-center text-indigo-900 ">
         <div className="font-semibold">Options</div>
-        <div className=" border-2 border-indigo-900 p-2  rounded-xl">
+        <div className=" border-2 border-indigo-900 p-2  rounded-full">
           <button className=" flex items-center space-x-2 gap-2 w-full ">
             {" "}
             <BiPlus /> Add Options

@@ -16,7 +16,7 @@ const ParentHeader = () => {
           <div className="text-xs">10k Threads</div>
         </div>
       </div>
-      <div className=" h-fit bg-indigo-950 text-white p-2 rounded-2xl">
+      <div className=" h-fit bg-indigo-950 text-white p-2  rounded-full text-xs">
         <button> Create Post</button>
       </div>
     </div>

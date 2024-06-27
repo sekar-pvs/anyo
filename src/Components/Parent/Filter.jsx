@@ -3,7 +3,7 @@ import { FaFilter } from "react-icons/fa";
 
 const Filter = () => {
   return (
-    <div className="flex justify-between items-center m-3">
+    <div className="flex justify-between items-center ml-10 w-[70%]">
       <div className="flex items-center space-x-2">
         <FaFilter /> <div>Filter</div>
       </div>

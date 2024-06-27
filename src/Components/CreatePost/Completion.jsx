@@ -6,11 +6,11 @@ const Completion = () => {
       <div className=" flex justify-between items-center text-indigo-900 ">
         <div className="font-semibold">Completion</div>
       </div>
-      <div className="h-28  text-indigo-950 rounded-t mt-1 ">
+      <div className="h-28  text-indigo-950 rounded-xl p-1 mt-1 ">
         <textarea
           name=""
           id=""
-          className="h-full w-full "
+          className="h-full w-full rounded-xl "
           placeholder="Write a message that will be shown to user after they complete the questionary"
         ></textarea>
       </div>

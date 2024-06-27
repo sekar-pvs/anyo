@@ -4,7 +4,7 @@ import { AnyoData } from "../../Context/AnyoContext";
 const PostCategory = () => {
   const { postCategory } = useContext(AnyoData);
   return (
-    <div className="flex space-x-3 text-sm font-semibold mt-5 ml-5 text-indigo-950 text-nowrap overflow-x-scroll ">
+    <div className="flex space-x-3 text-sm font-semibold mt-5 ml-10 text-indigo-950 text-nowrap overflow-x-scroll w-[85%] ">
       {postCategory.map((data) => {
         return (
           <div key={data.id} className="border-2 p-1 rounded-xl bg-slate-300">

@@ -3,7 +3,7 @@ import ParentOrign from "./ParentOrign";
 
 const YourPost = () => {
   return (
-    <div className="w-[50%] ml-10">
+    <div className="w-[50%] ">
       <ParentOrign />
     </div>
   );

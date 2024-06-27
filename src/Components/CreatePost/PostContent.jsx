@@ -2,7 +2,7 @@ import React from "react";
 
 const PostContent = () => {
   return (
-    <div className="flex justify-start mt-7 mr-3">
+    <div className="flex justify-start mt-5 ml-5">
       <div className="text-xs border-2 p-2 rounded-2xl text-indigo-950 font-semibold bg-red-200">
         1.Write Post{" "}
       </div>
