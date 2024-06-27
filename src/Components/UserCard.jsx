@@ -1,12 +1,13 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
+import { AnyoData } from "../Context/AnyoContext";
 
 const UserCard = () => {
-  const [buttonBg, setButtonBg] = useState(false);
-  const [postbuttonBg, setPostButtonBg] = useState(false);
+  const { postbuttonBg, setPostButtonBg, buttonBg, setButtonBg } =
+    useContext(AnyoData);
 
   return (
-    <div className="bg-red-200 h-[100%]">
+    <div className="bg-red-200 h-[100%] ">
       <div className="h-fit  w-[50%]   p-2  ">
         <div className="mt-10 bg-white p-4 rounded-2xl w-full ml-60">
           <div className="flex  items-center space-x-2  ">
@@ -65,49 +66,51 @@ const UserCard = () => {
 
             {/*  circle End */}
 
-            <hr className="mt-3" />
+            <hr className="mt-5" />
             <hr className="mt-6" />
             {/*  create button */}
-            <div
-              className={`w-full border-2 rounded-2xl text-center mt-5 p-1 ${
-                buttonBg
-                  ? "bg-indigo-900 text-white"
-                  : "bg-white text-indigo-900"
-              }`}
-            >
-              <Link to="/">
+            <Link to="/">
+              {" "}
+              <div
+                className={`w-full border-2 rounded-2xl text-center mt-5 p-1 ${
+                  buttonBg !== "AA"
+                    ? "bg-indigo-950 text-white  font-semibold text-sm"
+                    : "bg-white text-indigo-900  font-semibold text-sm"
+                }`}
+              >
                 {" "}
                 <button
                   onClick={() => {
-                    setButtonBg(!buttonBg);
+                    setButtonBg("BB");
                   }}
                   className="w-full"
                 >
                   Create Post
                 </button>
-              </Link>
-            </div>
+              </div>
+            </Link>
             {/* your post button */}
 
-            <div
-              className={`w-full border-2 rounded-2xl text-center mt-5 p-1 ${
-                postbuttonBg
-                  ? "bg-indigo-900 text-white"
-                  : "bg-white text-indigo-900"
-              }`}
-            >
-              <Link to="/post">
+            <Link to="/post">
+              {" "}
+              <div
+                className={`w-full border-2 rounded-2xl text-center mt-5 p-1 ${
+                  buttonBg !== "BB"
+                    ? "bg-indigo-950 text-white  font-semibold text-sm"
+                    : "bg-white text-indigo-900 font-semibold text-sm"
+                }`}
+              >
                 {" "}
                 <button
                   onClick={() => {
-                    setPostButtonBg(!postbuttonBg);
+                    setButtonBg("AA");
                   }}
                   className="w-full"
                 >
                   Your Post
                 </button>
-              </Link>
-            </div>
+              </div>
+            </Link>
           </div>
         </div>
       </div>

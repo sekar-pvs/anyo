@@ -1,11 +1,13 @@
 import { TbBrandWechat } from "react-icons/tb"; // first
 
-const { createContext } = require("react");
+const { createContext, useState } = require("react");
 
 export const AnyoData = createContext({});
 
 const AnyoContext = ({ children }) => {
   const data = "sekar";
+  const [buttonBg, setButtonBg] = useState("BB");
+  const [postbuttonBg, setPostButtonBg] = useState(false);
   const headerData = [
     {
       id: 1,
@@ -82,7 +84,18 @@ const AnyoContext = ({ children }) => {
     },
   ];
   return (
-    <AnyoData.Provider value={{ data, headerData, postCategory, post }}>
+    <AnyoData.Provider
+      value={{
+        data,
+        headerData,
+        postCategory,
+        post,
+        buttonBg,
+        setButtonBg,
+        postbuttonBg,
+        setPostButtonBg,
+      }}
+    >
       {children}
     </AnyoData.Provider>
   );
