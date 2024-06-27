@@ -1,10 +1,9 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AnyoData } from "../Context/AnyoContext";
 
 const UserCard = () => {
-  const { postbuttonBg, setPostButtonBg, buttonBg, setButtonBg } =
-    useContext(AnyoData);
+  const { buttonBg, setButtonBg } = useContext(AnyoData);
 
   return (
     <div className="bg-red-200 h-[100%] ">
